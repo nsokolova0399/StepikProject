@@ -1,8 +1,13 @@
 Проект был реализован на курсе степика. Включает в себя использование:
-1)Materialize - css библиотеку в стиле material design
+
+1)Materialize - css библиотеку в стиле material design 
+
 2)JQuery
+
 3)Api - SWAPI. Это api для работы с данными из вселенной Star Wars
+
 4)TweenMax - проработка анимации
+
 Привествие
 ![image](https://user-images.githubusercontent.com/87518745/185784241-bc0615df-1fd9-4e2c-986c-97a4b43ad1e1.png)
 
