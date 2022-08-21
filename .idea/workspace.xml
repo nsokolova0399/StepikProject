@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f52cd68-2456-469b-8ff5-92e377d45f8d" name="Default Changelist" comment="" />
+    <list default="true" id="2f52cd68-2456-469b-8ff5-92e377d45f8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +29,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="2BqOftGHmyjct9UAcj1QgQMqyTZ" />
@@ -60,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657630256617</updated>
       <workItem from="1657630268991" duration="2277000" />
-      <workItem from="1661069809273" duration="2357000" />
+      <workItem from="1661069809273" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1657630978396</created>
