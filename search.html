@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEARCH VUE</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+<div id="search">
+
+    <a class="viewed-btn btn-floating waves-effect"><i class="material-icons">turned_in_not</i></a>
+
+    <div class="viewed-menu card" style="display: none">
+        <ul>
+            <li>
+                <span>first</span>
+                <a class="btn btn-small">удалить</a>
+            </li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+    </div>
+
+    <h5>{{header}}</h5>
+
+    <div id="search-console">
+        <input type="text" id="search-input" style="color: #595959" v-model="request">
+    </div>
+
+    <div class="card film-card" v-for="(film, i) in films">
+        <p>{{i++}}. {{film.title}}</p>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<script>
+    let initHeader = "Что Вы ищите?";
+    let vm = new Vue({
+        el:"#search",
+        data:{
+            request : "Что Вы ищите?",
+            films: []
+        },
+        computed:{
+            header(){
+                return this.request === "" || this.request == initHeader ? "Ничего не ищем" : `Хотим найти ${this.request}`;
+            }
+        },
+        async mounted(){
+            this.films = await fetch("https://swapi.co/api/films/").then(res => res.json()).then(data => data.results);
+        }
+    })
+</script>
+
+</body>
+</html>
